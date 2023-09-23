@@ -29,7 +29,7 @@ public class Main {
 
          */
 
-
+        /*
         //Uppgift 3
         do {
 
@@ -39,22 +39,25 @@ public class Main {
 
         }while (true);
 
+         */
 
 
+        //Uppgift 4
+        boolean isPlaying = true;
 
+        do {
 
+            System.out.println("If you wish to stop playing, write stop");
+            Scanner scStopGame = new Scanner(System.in);
+            String playerProgress = scStopGame.nextLine();
 
+            if (playerProgress.equals("stop")){
 
+                isPlaying = false;
+            }
+
+        }while (isPlaying);
 
         }
 
-
-
-
-
-
         }
-
-
-
-
