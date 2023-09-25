@@ -8,16 +8,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        /*
+
         //Uppgift 1
         System.out.println("What's your name player #1?");
         String playerOne = sc.nextLine();
         System.out.println("Player #1: " + playerOne);
 
-         */
 
-
-        /*
         //Uppgift 2
         System.out.println("Enter a number");
         int x = sc.nextInt();
@@ -27,9 +24,7 @@ public class Main {
             System.out.println("Loop #" + (i));
         }
 
-         */
 
-        /*
         //Uppgift 3
         do {
 
@@ -39,9 +34,7 @@ public class Main {
 
         }while (true);
 
-         */
 
-        /*
         //Uppgift 4
         boolean isPlaying = true;
 
@@ -58,8 +51,8 @@ public class Main {
 
         }while (isPlaying);
 
-         */
 
+        //Uppgift 5
         boolean isAttacking = true;
 
         do {
@@ -83,6 +76,18 @@ public class Main {
             }
 
         }while (isAttacking);
+
+
+        //Uppgift 6
+
+        System.out.println("Ange ett heltal:");
+
+        if (sc.hasNextInt()){
+            int num = sc.nextInt();
+            System.out.println("Du matade in ett talet: " + num);
+
+
+        } else System.out.println("Ogiltigt värde. Du måste ange ett heltal.");
 
         }
 
