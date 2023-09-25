@@ -41,7 +41,7 @@ public class Main {
 
          */
 
-
+        /*
         //Uppgift 4
         boolean isPlaying = true;
 
@@ -57,6 +57,32 @@ public class Main {
             }
 
         }while (isPlaying);
+
+         */
+
+        boolean isAttacking = true;
+
+        do {
+
+            System.out.println("Press 1 to attack or press stop to forfeit the game");
+            Scanner scAttackStop = new Scanner(System.in);
+            String chooseNow = scAttackStop.nextLine();
+
+            switch (chooseNow) {
+
+                case "stop":
+                    isAttacking = false;
+                    break;
+
+                case "1":
+                    System.out.println("Throwing");
+                    break;
+
+                default:
+                    System.out.println("Wrong input");
+            }
+
+        }while (isAttacking);
 
         }
 
